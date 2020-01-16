@@ -13,14 +13,14 @@ class PlatformApp extends StatefulWidget {
   CupertinoApp _createIosApp(BuildContext context) {
     return CupertinoApp(
       home: home,
-      theme: platformTheme.createTheme(),
+      theme: platformTheme.ios,
     );
   }
 
   MaterialApp _createAndroidApp(BuildContext context) {
     return MaterialApp(
       home: home,
-      theme: platformTheme.createTheme(),
+      theme: platformTheme.android
     );
   }
 
